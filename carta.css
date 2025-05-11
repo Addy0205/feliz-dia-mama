@@ -1,0 +1,48 @@
+/*carta css */
+
+.carta {
+  width: 90%;
+  max-width: 400px;
+  height: 280px;
+  perspective: 1000px;
+  margin: 4rem auto;
+  cursor: pointer;
+}
+
+.carta-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carta.abierta .carta-inner {
+  transform: rotateY(180deg);
+}
+
+.cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.frontal {
+  background-color: #fbccffa1;
+  color: var(--oscuro);
+}
+.trasera {
+  background-color: var(--secundario);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

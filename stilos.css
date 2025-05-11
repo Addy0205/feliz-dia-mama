@@ -1,0 +1,55 @@
+/* estilos css */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario:red;
+    --secundario: #f7bfd8;   
+    --pastel: #ccffff;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    font-family: "Tagesschrift", system-ui;
+    background-image: url(fondo2.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header {
+    padding: 2rem;
+
+}
+.msg {
+    color: var(--oscuro);
+    text-align: justify;
+}
+.intro {
+    color: var(--primario);
+    text-align: justify;
+}
+
+.titulo h1{
+    text-align: center;
+    color: var(--blanco);
+    font-weight: 400;
+    font-style: normal;
+}
+.contenedor {
+    background-color: var(--secundario);
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 7px -6px 20px 5px rgb(0 0 0 / 21%);
+    display: flex;
+    flex-direction: column;
+}
+.enlace {
+    text-align: center;
+}
+.enlace a {
+    text-decoration: none;
+}

@@ -1,0 +1,105 @@
+/*madre css*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
+  color: #4b2c2c;
+}
+
+header {
+  background-color: #ffc0cb;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.carrusel-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.carrusel {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.carrusel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-img {
+  min-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn {
+  top: 50%;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.indicadores {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.punto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.punto.active {
+  background-color: #d63384;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+.carrusel-img {
+  animation: fadeZoom 1s ease-in-out;
+}
+
+@keyframes fadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
